@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake — gugu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>🐍 SNAKE</h1>
+
+    <div id="scoreboard">
+      <div>Score: <strong id="score">0</strong></div>
+      <div>Best: <strong id="highScore">0</strong></div>
+    </div>
+
+    <div id="canvas-wrapper">
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="overlay">
+        <h2 id="overlayTitle">Snake</h2>
+        <p id="overlayMsg">Classic arcade game — eat, grow, survive!</p>
+        <p class="final-score" id="finalScore"></p>
+        <button id="startBtn">Start Game</button>
+      </div>
+    </div>
+
+    <p id="controls">
+      Arrow keys or <kbd>W A S D</kbd> to move &nbsp;|&nbsp; Mobile: swipe on the canvas
+    </p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
